@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debounce Search From API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="searchbar">
+            <input type="search" class="searchbar__input" placeholder="Search Product">
+        </div>
+        <div class="product-container"></div>
+    </div>
+
+    <template data-product-card-template>
+        <div class="product-card" data-product-card-element>
+            <div class="product-card__header">
+                <img class="product-card__header__image" data-product-card-image alt="product" loading="lazy">
+                <strong class="product-card__header__badge" data-product-card-category></strong>
+            </div>
+            <div class="product-card__body">
+                <h3 class="product-card__title" data-product-card-title></h3>
+                <p class="product-card__text" data-product-card-description></p>
+            </div>
+        </div>
+    </template>
+</body>
+</html>

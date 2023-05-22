@@ -1,0 +1,102 @@
+:root{
+    --card-bg: #ffffff;
+    --card-border: #222222;
+    --badge-color: #ffffff;
+    --badge-bg: #222222;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+}
+
+.searchbar{
+    padding: 2rem 0.5rem;
+    text-align: center;
+}
+
+.searchbar__input{
+    width: min(100%, 80rem);
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 2rem;
+    border: 2px solid var(--card-border);
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.product-card{
+    background-color: var(--card-bg);
+    border: 2px solid var(--card-border);
+}
+
+.product-card__header{
+    position: relative;
+    padding-top: 75%;
+    border-bottom: 2px solid var(--card-border);
+}
+
+.product-card__header__image,
+.product-card__header__badge
+{
+    position: absolute;
+}
+
+.product-card__header__image{
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    pointer-events: none;
+}
+
+.product-card__header__badge{
+    display: inline-block;
+    color: var(--badge-color);
+    background-color: var(--badge-bg);
+    padding: 0.5rem 1rem;
+    bottom: 0;
+}
+
+.product-card__body{
+    padding: 1.5rem;
+}
+
+.product-card__title{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.product-card__text{
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
