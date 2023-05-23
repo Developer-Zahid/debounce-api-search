@@ -47,6 +47,14 @@ img{
     border: 2px solid var(--card-border);
 }
 
+.page-title{
+    margin-bottom: 2rem;
+}
+
+[data-product-count]{
+    font-family: consolas;
+}
+
 .product-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
